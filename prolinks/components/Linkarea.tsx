@@ -8,8 +8,18 @@ interface LinkProps {
 }
 
 const CustomLink = ({ urlToContact }: LinkProps) => {
-  return <Box className = "linkBackround" sx={{padding: "0.75rem  5.625rem"}  }> 
-    <Link href={urlToContact.link} target='_blank'> {urlToContact.linkTitle}</Link>
+  return <Box className = "linkBackround" 
+  sx={{
+    padding: "0.75rem  5.625rem",
+    width: "15rem",
+    display:"flex",
+    justifyContent : "center",
+    alignContent: "center",
+    color: "#FFF",
+    textDecoration: "none",
+    }  }> 
+    <Link href={urlToContact.link} target='_blank' 
+    > {urlToContact.linkTitle} </Link>
   </Box>
 
 };

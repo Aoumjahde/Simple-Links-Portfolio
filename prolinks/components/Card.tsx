@@ -19,7 +19,13 @@ const Card = () => {
     return ( 
     <Box 
         className = "cardBackround"
-        sx={{padding : "2rem", borderRadius : "0.75rem" , display: "flex", flexDirection : "column", alignItems:"center"}}
+        sx={{
+            padding : "2rem",
+            borderRadius : "0.75rem",
+            display: "flex",
+            flexDirection : "column",
+            alignItems:"center",
+        }}
     > 
         <Image 
         src="/assets/pic2.PNG" 
@@ -30,22 +36,28 @@ const Card = () => {
             borderRadius: "50%",
             marginBottom: "1.5rem",
         }}
-        />
+    />
 
         <Typography variant = "h1" sx={{ fontSize: "2.25rem", fontWeight: "bold", marginBottom:"0.5rem"}}>Abdelaziz OUMJAHDE</Typography>
         <Typography  className = "neon" variant = "h4" sx={{ fontSize: "1.3125rem", fontWeight : "bold", marginBottom:"1rem"}}>Agadir, Morocco</Typography>
         <Typography  className = "headline" variant = "h1" sx={{ fontSize: "1.5rem", fontWeight : "large", marginBottom:"0.5rem"}}>Full-Stack Developer.</Typography>
 
-        {/* {urlsToContact.map((url) => (
-            <a href={url.link} key={url.link} target="_black">
-                {url.linkTitle}
-            </a> */}
-            {urlsToContact.map((url) => (
-            <Link href={url.link} key={url.link}>  // ❌ Duplicate key if `url.link` is the same
-                {url.linkTitle}
-            </Link>
-            ))            
 
+        {urlsToContact.map((urlToContact) => (
+            <Link href={urlToContact.link} key={urlToContact.link} target="_black"  style={{
+                display:"flex",
+                justifyContent : "center",
+                alignContent: "center",
+                padding: "0.75rem  5.625rem",
+                width: "15rem",
+                color: "#FFF",
+                textDecoration: "none",
+                backgroundColor: "#333333",
+                borderRadius: "15px",
+            }}> 
+                {urlToContact.linkTitle}
+            </Link>
+            ))   
         }
         
      </Box>
