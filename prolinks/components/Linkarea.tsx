@@ -17,6 +17,7 @@ const CustomLink = ({ urlToContact }: LinkProps) => {
     alignContent: "center",
     color: "#FFF",
     textDecoration: "none",
+    margin: "2rem 0",
     }  }> 
     <Link href={urlToContact.link} target='_blank' 
     > {urlToContact.linkTitle} </Link>

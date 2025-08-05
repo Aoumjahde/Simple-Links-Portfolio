@@ -12,7 +12,7 @@ const urlsToContact = [
     {linkTitle: "Twitter", link: "https://x.com/Aoumjahde"},
     {linkTitle: "Blog", link: "https://meduim.com/azizoumjahde"},
     {linkTitle: "Instagram", link: "https://instagram.com/lpabdo"},
-    {linkTitle: "Email", link: "oumj.aziz@gmail.com"},
+
 ]
 
 const Card = () => {
@@ -25,6 +25,7 @@ const Card = () => {
             display: "flex",
             flexDirection : "column",
             alignItems:"center",
+            
         }}
     > 
         <Image 
@@ -40,7 +41,8 @@ const Card = () => {
 
         <Typography variant = "h1" sx={{ fontSize: "2.25rem", fontWeight: "bold", marginBottom:"0.5rem"}}>Abdelaziz OUMJAHDE</Typography>
         <Typography  className = "neon" variant = "h4" sx={{ fontSize: "1.3125rem", fontWeight : "bold", marginBottom:"1rem"}}>Agadir, Morocco</Typography>
-        <Typography  className = "headline" variant = "h1" sx={{ fontSize: "1.5rem", fontWeight : "large", marginBottom:"0.5rem"}}>Full-Stack Developer.</Typography>
+        <Typography  className = "neon" variant = "h3" sx={{ fontSize: "1.3125rem", fontWeight : "bold", marginBottom:"1rem"}}> oumj.aziz@gmail.com</Typography>
+        <Typography  className = "headline" variant = "h1" sx={{ fontSize: "1.5rem", fontWeight : "large", marginBottom:"0.7rem"}}>Full-Stack Developer.</Typography>
 
 
         {urlsToContact.map((urlToContact) => (
@@ -54,6 +56,9 @@ const Card = () => {
                 textDecoration: "none",
                 backgroundColor: "#333333",
                 borderRadius: "15px",
+                fontWeight : 600,
+                margin: "0.8rem 0",
+
             }}> 
                 {urlToContact.linkTitle}
             </Link>

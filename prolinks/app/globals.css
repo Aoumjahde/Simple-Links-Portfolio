@@ -28,6 +28,9 @@ html {
   flex-direction: column;
 }
 
+.span{
+  color: #c4f82a;
+}
 .neon {
   color: #c4f82a;
 }
