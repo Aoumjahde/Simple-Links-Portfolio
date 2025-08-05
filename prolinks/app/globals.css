@@ -1,8 +1,13 @@
 html {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
   background-color: #141414;
   color:  #ffffff;
   padding: 0;
   margin: 0;
+
 }
 
 .container{
@@ -16,8 +21,20 @@ html {
 }
 .linkBackround{
   background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid;
+  border-radius: 0.2rem;
+  padding-bottom: 2rem;
+  margin: 2rem;
+
 }
 
 .neon {
   color: #c4f82a;
+}
+.headline{
+  color: #ffffff;
 }
