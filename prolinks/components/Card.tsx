@@ -8,10 +8,10 @@ import Link from "next/link";
 
 const urlsToContact = [
     {linkTitle: "Github", link: "https://github.com/Aoumjahde"},
-    {linkTitle: "LinkedIn", link: "https://LinkedIn.com/azizoumjahde"},
+    {linkTitle: "LinkedIn", link: "https://www.linkedin.com/in/oumjahdeaziz/"},
     {linkTitle: "Twitter", link: "https://x.com/Aoumjahde"},
-    {linkTitle: "Blog", link: "https://meduim.com/azizoumjahde"},
-    {linkTitle: "Instagram", link: "https://instagram.com/lpabdo"},
+    {linkTitle: "Blog", link: "https://medium.com/@oumj.aziz"},
+    {linkTitle: "Instagram", link: "https://instagram.com/lp.aziz"},
 
 ]
 
